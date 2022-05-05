@@ -34,6 +34,9 @@ class HomeFragment : Fragment() {
             btnFlowAndRoom.setOnClickListener{
                 findNavController().navigate(R.id.action_homeFragment_to_userFragment)
             }
+            btnFlowAndRetrofit.setOnClickListener{
+                findNavController().navigate(R.id.action_homeFragment_to_articleFragment)
+            }
         }
 
 
