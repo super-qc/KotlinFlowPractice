@@ -4,3 +4,4 @@
   - Flow And Room应用
   - FLow And Retrofit
   - StateFlow
+  - SharedFlow
