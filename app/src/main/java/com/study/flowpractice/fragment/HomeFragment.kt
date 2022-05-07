@@ -37,9 +37,20 @@ class HomeFragment : Fragment() {
             btnFlowAndRetrofit.setOnClickListener{
                 findNavController().navigate(R.id.action_homeFragment_to_articleFragment)
             }
+            btnStateFlow.setOnClickListener{
+                findNavController().navigate(R.id.action_homeFragment_to_stateFlowFragment)
+            }
+            btnSharedFlow.onClik{
+                findNavController().navigate(R.id.action_homeFragment_to_sharedFlowFragment)
+            }
         }
 
 
+    }
+
+    fun View.onClik(callback:(view:View)->Unit){
+        setOnClickListener {
+            callback(it) }
     }
 
 

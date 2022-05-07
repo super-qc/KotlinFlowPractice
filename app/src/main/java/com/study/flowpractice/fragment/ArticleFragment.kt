@@ -61,7 +61,6 @@ class ArticleFragment : Fragment() {
             mBinding.etKeywords.textWatcherFlow().collect {
                 Log.d(this.javaClass.name, "collect keywords:$it")
                 viewModel.searchArticles(it)
-
             }
         }
         viewModel.articles.observe(viewLifecycleOwner) { articles ->
